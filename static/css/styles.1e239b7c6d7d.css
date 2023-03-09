@@ -1,0 +1,670 @@
+/* Normalize CSS */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+
+}
+
+/* Header Styles */
+#logo{
+    margin-top: 4%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.navbar-nav li{
+    margin-left: 5%;
+}
+
+.navbar-nav li:hover{
+    color: red;
+}
+
+.nav-item{
+    width: 140px;
+}
+
+header{
+    background-color: #f8f9fa;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+    margin-left: 10%;
+  margin-right: 10%;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li.logo {
+  margin-right: auto;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: red;
+}
+
+.header_link{
+    display: block;
+}
+
+.navbar-text{
+   margin-left: 20%;
+}
+
+#callback{
+    display: block;
+    background-color: #d1d1d1;
+    border-radius: 20px;
+    color: #0d0d0d;
+    width: 163px;
+    margin-left: calc(42.2% - 320px)
+
+}
+
+/* Main Content Styles */
+main {
+  padding: 34px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content
+ to prevent sudden quick movement
+  (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + main {
+  padding-top: 102px;
+
+}
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 24px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#carouselExampleCaptions{
+    max-height: 450px;
+}
+
+#carousel__photo{
+    max-height: 450px;
+}
+
+.d-block w-100{
+ display: none;
+}
+
+.about{
+    width: 100%;
+}
+
+.about__wrapper{
+    position: relative
+}
+
+.about__wrapper h2{
+    border-top: 1px solid #a6a6a6;
+    margin-top: 30px;
+    text-align: center;
+}
+.rev h2{
+    border-top: 1px solid #a6a6a6;
+    margin-top: 30px;
+    text-align: center;
+}
+.about__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about__container__item{
+    border: 1px solid #a6a6a6;
+    border-radius: 40px;
+    width: 550px;
+    height: 300px;
+    margin: 10px;
+    gap: 10px;
+    text-align: -webkit-center;
+}
+
+.about__container__item img{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.about__container__item p{
+    margin: 20px;
+}
+
+.process{
+    border-top: 1px solid #a6a6a6;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form{
+    margin-top: 10px
+}
+.form__wrapper{
+    display: flex;
+}
+.form_caption{
+    width: 50%
+}
+
+.form h2{
+    border-top: 1px solid #a6a6a6;
+    margin-top: 30px;
+    text-align: center;
+}
+.form__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.faq{
+    margin-top: 40px;
+    border-top: 1px solid #a6a6a6;
+}
+
+.faq__wrapper{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.faq h2{
+    font-size: 1.4em;
+    text-transform: uppercase; / * заглавные буквы * /
+    padding-top: 20px; / * отступ сверху * /
+    background: #880E4F; / * цвет фона * /
+    font-weight: 300;
+    letter-spacing: 0.3em; / * расстояние между буквами * /
+    color: #fff;
+    writing-mode: vertical-lr;
+    transform: scale(-1);
+}
+.faq_dropdown{
+    width: 100%;
+}
+
+.accordion {
+    margin: 10px;
+    transform: translateZ(0);
+    background: white;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.accordion>.accordion-toggle {
+    display: none;
+    position: absolute;
+    opacity: 0;
+}
+
+.accordion>label {
+    display: block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background: #ecebec;
+    color: #555;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordion>label:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid #555;
+    border-top: 2px solid #555;
+    transform: rotate(-135deg);
+    transition: 0.4s transform;
+}
+
+.accordion>section {
+    overflow: hidden;
+    height: 0;
+    transition: all 0s;
+}
+
+.accordion>.accordion-toggle:checked~label:after {
+    transform: rotate(45deg);
+    top: 16px;
+}
+
+.accordion>.accordion-toggle:checked~section {
+        height:100%
+}
+
+.accordion>section p {
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 996px) {
+ #logo{
+     margin-top: 0;
+
+     width: 90px;
+     height: 90px;
+     position: relative;
+     }
+  #callback{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main {
+      margin-left: 0;
+      margin-right: 0;
+
+    }
+  .about__container__item{
+        width: 430px;
+        height: 100%
+        max-height: 350;
+    }
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Стили для экранов меньше 768 пикселей */
+@media screen and (max-width: 767px) {
+  header nav ul {
+    display: block;
+    margin: 0;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li.logo {
+    margin-right: 0;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+  }
+
+  header nav ul li a:hover {
+    color: red;
+  }
+
+  #callback {
+    margin-left: 0;
+  }
+
+  main {
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about__container__item {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .form_caption {
+    width: 100%;
+  }
+  .form__wrapper {
+    flex-direction: column;
+  }
+
+  .form_caption {
+    width: 100%;
+  }
+}
+
+/* Стили для экранов между 768 и 1024 пикселями */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header nav ul {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  header nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 12px 12px;
+  }
+
+  #callback {
+    margin-left: calc(50% - 75px);
+  }
+
+  main {
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .about__wrapper h2 {
+    margin-top: 0;
+  }
+  .form_caption {
+    width: 50%;
+  }
+
+  .form__form {
+    margin-left: 30px;
+  }
+}
+
+/* Стили для экранов больше 1024 пикселей */
+@media screen and (min-width: 1025px) {
+  header nav ul {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  header nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 12px 24px;
+  }
+
+  #callback {
+    margin-left: calc(42.2% - 320px);
+  }
+
+  main {
+    padding: 34px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.review_wrapper{
+border-top: 1px solid #a6a6a6;
+    margin-top: 30px;
+    text-align: center;
+}
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+
+/* Подключение шрифта Roboto */
+@import url("https:/*fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* При расчете размеров инпутов учитываем внутренние отступы и границы */
+
+/* В body устанавливаем шрифт, ширину и высоту, а также фон */
+
+/* Ограничиваем контейнер по ширине 1000px */
+.container {
+}
+
+.callback__form{
+border-top: 1px solid #a6a6a6;
+    margin-top: 30px;
+    text-align: center;
+}
+/* Стили самой формы */
+.content {
+  display: flex; /* делаем колонки в ряд */
+  align-items: center; /* выравниваем по центру */
+  justify-content: space-between; /* колонки растянутся на всю ширину */
+  background: #fff;
+  padding: 40px;
+  border-radius: 5px;
+}
+.content h2{
+border-top: 1px solid #a6a6a6;
+    margin-top: 30px;
+    text-align: center;
+}
+/* Стили левой колонки */
+.left-side {
+  width: 25%; /* занимает 25% общей ширины */
+  height: 100%; /* растягиваем на всю высоту */
+  position: relative; /* позиционирование относительное (для ::before) */
+  display: flex;
+  flex-direction: column; /* внутри элементы располагаем в колонку */
+}
+
+/* Стили разделительной линии между левой и правой колонкой */
+.left-side::before {
+  content: ""; /* контент нам не нужен */
+  position: absolute; /* позиционируем относительно .left-side */
+  height: 70%; /* высота 70% от .left-side */
+  width: 2px; /* ширина 2px */
+  background: #afafb6;
+  right: -15px; /* позиционируем справа + отступ 15px (справа) */
+  top: 50%; /* выравниваем по центру */
+  transform: translateY(-50%); /* выравниваем по центру */
+}
+
+/* Стили правой колонки */
+.right-side {
+  width: 75%; /* занимает 75% общей ширины */
+  margin-left: 75px;
+}
+
+/* Элементы левой колонки: адрес, телефон, email */
+.details {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Общие стили для иконок */
+.details i {
+  font-size: 25px; /* задаем размер */
+  color: #3e2093; /* задаем цвет */
+  margin-bottom: 10px;
+}
+
+/* Стили для заголовков левой колонки */
+.topic {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 7px; /* отступ снизу 7px */
+}
+
+/* Стили для текста левой колонки */
+.text-one,
+.text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+/* Заголовок правой колонки */
+.topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+
+/* Текст правой колонки */
+.right-side p {
+  margin-bottom: 20px;
+}
+
+/* Контейнер для input'ов формы */
+.input-box {
+  height: 50px; /* по сути задаем высоту input'а */
+  width: 100%; /* ширина на всю ширину правой колонки (с учетом padding) */
+  margin-bottom: 20px; /* отступаем снизу 20px */
+}
+
+/* Стили для input и textarea (поле сообщение) */
+.input-box input,
+.input-box textarea {
+  height: 100%; /* растягиваем на всю высоту контейнера 50px */
+  width: 100%; /* растягиваем на всю ширину */
+  border: none; /* убираем внешние края */
+  border-radius: 5px; /* скругляем края */
+  background: #f2f2f2; /* задаем цвет фона */
+  padding: 0 20px; /* отступ справа и слева 20px */
+}
+
+/* Отдельно стилизуем поле сообщение */
+.input-box textarea {
+  resize: none; /* чтобы нельзя было менять высоту */
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Это контейнер для поля сообщение */
+.message-box {
+  min-height: 110px; /* минимальная высота 110px */
+}
+
+/* Стили для контейнера кнопки */
+.button {
+  display: inline-block; /* делаем блочно-строчный элемент */
+  float: left;
+}
+
+/* Стили для самой кнопки */
+.button input[type="submit"] {
+  color: #000;
+  font-size: 18px;
+  background: #d1d1d1;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition: 0.2s; /* чтобы плавно менялся цвет при наведении (:hover) */
+}
+
+/* Меняем цвет фона при наведении на кнопку */
+.button input[type="submit"]:hover {
+  background: rgb(0, 0, 207);
+}
+
+
+/* Меняем стили при ширине экрана меньше 800px */
+@media (max-width: 800px) {
+  /* Теперь форма (правая колонка) будет сверху, а элементы (левая колонка) снизу */
+  .content {
+    height: 100%;
+    flex-direction: column-reverse; /* располагаем в колонку и реверсивно */
+  }
+
+  /* Внутри левой колонки внутренние элементы располагаем в ряд */
+  .left-side {
+    margin-top: 50px;
+    flex-direction: row; /* располагаем элементы (адрес, телефон, email) в ряд */
+    width: 100%; /* левая колонка на всю ширину */
+    justify-content: center;
+    flex-wrap: wrap; /* перенос элементов, если не хватит места */
+  }
+  .details {
+    margin-right: 20px;
+  }
+  .details:last-child {
+    margin-right: 0;
+  }
+
+  /* Убираем разделительную линию */
+  .left-side::before {
+    display: none;
+  }
+
+  /* Правая колонка теперь на всю ширину и не имеет отступа слева */
+  .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+docker run --name pet_shop -v -itd -p 8080:8000 -d pyostr/faceroombot
