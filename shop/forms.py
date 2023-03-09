@@ -10,7 +10,7 @@ class ContactForm(forms.Form):
     )
     phone = PhoneNumberField(
         widget=forms.TextInput(
-            attrs={'class': 'yourclass', 'placeholder': '380 123456789',
+            attrs={'class': 'yourclass', 'placeholder': '380 ',
                    }), label=u'Телефон', max_length=13, required=True
     )
     address = forms.CharField(

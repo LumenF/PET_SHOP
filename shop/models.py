@@ -21,3 +21,18 @@ class OrderModel(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ContactModel(models.Model):
+    class Meta:
+        verbose_name = 'Инфо'
+        verbose_name_plural = 'Инфо'
+
+    name = models.CharField(
+        verbose_name='Имя',
+        max_length=255,
+    )
+    value = models.CharField(
+        verbose_name='Значение',
+        max_length=255,
+    )

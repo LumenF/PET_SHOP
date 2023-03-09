@@ -8,50 +8,49 @@
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
+<!--    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
   </div>
   <div class="carousel-inner">
     <div id="carousel__photo"  class="carousel-item active">
       <img id="carousel__img" src="{% static 'img/slide_1.jpg' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>Работаем с 2019 года</h5>
+        <p>Безпечне перевезення вихованця в будь-яке місто.</p>
       </div>
     </div>
-    <div id="carousel__photo"  class="carousel-item">
-      <img id="carousel__img" src="{% static 'img/slide_2.png' %}" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div id="carousel__photo"  class="carousel-item">
-      <img id="carousel__img" src="{% static 'img/slide_3.png' %}" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
+<!--    <div id="carousel__photo"  class="carousel-item">-->
+<!--      <img id="carousel__img" src="{% static 'img/slide_2.png' %}" class="d-block w-100" alt="...">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Second slide label</h5>-->
+<!--        <p>Some representative placeholder content for the second slide.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div id="carousel__photo"  class="carousel-item">-->
+<!--      <img id="carousel__img" src="{% static 'img/slide_3.png' %}" class="d-block w-100" alt="...">-->
+<!--      <div class="carousel-caption d-none d-md-block">-->
+<!--        <h5>Third slide label</h5>-->
+<!--        <p>Some representative placeholder content for the third slide.</p>-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">-->
+<!--    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--    <span class="visually-hidden">Previous</span>-->
+<!--  </button>-->
+<!--  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">-->
+<!--    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--    <span class="visually-hidden">Next</span>-->
+<!--  </button>-->
 </div>
 
 <script>
   var myCarousel = document.querySelector('#carouselExampleCaptions')
 var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 14000,
+  interval: 6000,
   wrap: true,
   keyboard: true,
   touch: true,
-  index: 0,
 })
 </script>
 <section id="s2"></section>
@@ -80,21 +79,16 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 
     </div>
     <div class="about__container__item">
-    <h5>Наша діяльність</h5>
+    <h5>Безпека тварин</h5>
       <p><br>
-      Ми надаємо послуги з транспортування домашніх тварин будь-яких порід та розмірів.<br>
-      Ми дбаємо про те, щоб ваш вихованець отримав усі необхідні документи
-      та щеплення відповідно до вимог країни призначення.<br>
-      Ми також надаємо послуги з оформлення документів та консультування з питань,
-      пов'язаних з перевезенням тварин.</p>
-    </div>
+      Я не могла уявити собі, що це станеться так швидко. Рішення про перевезення собаки з Харкова до Києва було ухвалено за кілька днів до цього. Я знайшла спеціальну службу доставки собак та за допомогою них підготувала всі необхідні документи для перевезення собаки. Під час подорожі я часто отримувала поновлення від драйвера про місцезнаходження мого собаки. Зрештою, собаку було доставлено безпечно та здорово до Києва. Я була дуже задоволена та вдячна службі доставки за професіоналізм та люб'язність.</div>
   </div>
 </div>
 
 
 <div class="process">
   <div class="process__wrapper">
-    <h2>Наш процесс работы с животными</h2>
+    <h2>Наш процес роботи з тваринами</h2>
 
     <div id="carouselProcess" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -140,7 +134,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 <script>
 var myCarousel = document.querySelector('#carouselProcess')
 var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 1000,
+  interval: 2000,
   wrap: true,
   keyboard: true,
   touch: true,
@@ -216,7 +210,8 @@ var carousel = new bootstrap.Carousel(myCarousel, {
           <h4 class="mb-4">Полина Куско</h4>
           <hr />
           <p class="dark-grey-text mt-4">
-            <i class="fas fa-quote-left pe-2"></i>Я не могла представить себе, что это произойдет так быстро. Решение о перевозке собаки из Харькова в Киев было принято за несколько дней до этого. Я нашла специальную службу доставки собак и с помощью них подготовила все необходимые документы для перевозки собаки. Во время путешествия я часто получала обновления от драйвера о местонахождении моей собаки. В конце концов, собака была доставлена безопасно и здоровой в Киев. Я была очень довольна и благодарна службе доставки за профессионализм и любезность.
+            <i class="fas fa-quote-left pe-2"></i>
+          Я не могла уявити собі, що це станеться так швидко. Рішення про перевезення собаки з Харкова до Києва було ухвалено за кілька днів до цього. Я знайшла спеціальну службу доставки собак та за допомогою них підготувала всі необхідні документи для перевезення собаки. Під час подорожі я часто отримувала поновлення від драйвера про місцезнаходження мого собаки. Зрештою, собаку було доставлено безпечно та здорово до Києва. Я була дуже задоволена та вдячна службі доставки за професіоналізм та люб'язність.
         </div>
       </div>
     </div>
@@ -231,7 +226,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
           <h4 class="mb-4">Оксана Курсик</h4>
           <hr />
           <p class="dark-grey-text mt-4">
-            <i class="fas fa-quote-left pe-2"></i> Однажды я захотела подарить своей дочери щенка. Я нашла маленького пушистого харьковского щеночка, и моя дочь была в восторге. Проблема заключалась в том, что мы живем в Киеве, и нам нужно было доставить щеночка до нашей дома. Мы долго искали способ доставить его безопасно, и в итоге нашли перевозчика, который доставил щеночка до нашего дома. Я была в восторге от своей дочери и ее щеночка. Теперь эта маленькая малышка – пушистый ангора – полностью входит в нашу семью. Я не могу передать достаточно трогательных слов для описания процесса перевозки щеночка из Харькова в Киев. Это был настоящий праздник!
+            <i class="fas fa-quote-left pe-2"></i> Якось я захотіла подарувати своїй дочці цуценя. Я знайшла маленьке пухнасте харківське цуценя, і моя дочка була в захваті. Проблема полягала в тому, що ми живемо у Києві, і нам потрібно було доставити цуценя до нашого будинку. Ми довго шукали спосіб доставити його безпечно, і в результаті знайшли перевізника, який доставив цуценя до нашого будинку. Я та моя донька були в захваті від нашого нового друга. Тепер ця маленька мала – пухнаста ангора – повністю входить у нашу родину. Я не можу передати достатньо зворушливих слів для опису процесу перевезення цуценя з Харкова до Києва. Це було справжнє свято!
         </div>
       </div>
     </div>
@@ -269,15 +264,18 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 
             <div class="phone details">
               <i class="fas fa-phone-alt"></i>
-              <div class="topic">Телефон</div>
-              <div class="text-one">8-800-000-00-00</div>
-              <div class="text-two">8-900-000-00-00</div>
+              <div class="topic">Наш телефон</div>
+              <div class="text-one">{{ contact }}</div>
             </div>
             <div class="email details">
               <i class="fas fa-envelope"></i>
-              <div class="topic">Email</div>
-              <div class="text-one">support@site.com</div>
-              <div class="text-two">admin@site.com</div>
+              <div class="topic">Наш email</div>
+              <div class="text-one">{{ email }}</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Наші реквізити</div>
+              <div class="text-one">{{ pay }}</div>
             </div>
           </div>
 
@@ -285,8 +283,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
           <div class="right-side">
 
             <p>
-              Если у вас есть какие-то вопросы или предложения по сотрудничеству -
-              заполните форму ниже
+
             </p>
 
             <form action="/" method="post">
@@ -304,7 +301,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 
               </div>
               <div class="button">
-                <input type="submit" value="Отправить" />
+                <input type="submit" value="Відправити" />
               </div>
             </form>
           </div>

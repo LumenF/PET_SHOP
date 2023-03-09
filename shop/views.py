@@ -7,23 +7,29 @@ from django.views import View
 from django.views.generic import FormView
 
 from shop.forms import ContactForm
-from shop.models import OrderModel
-
-
-class IndexView(FormView):
-    template_name = 'html/index.html'
-    form_class = ContactForm
-    success_url = '/'
+from shop.models import OrderModel, ContactModel
 
 
 def home(request):
     if request.method == 'GET':
-        return render(request, 'html/index.html', context={'form': ContactForm})
+        context = {
+            'form': ContactForm,
+        }
+        info = ContactModel.objects.all()
+        for i in info:
+            if i.name == 'Контакт':
+                context['contact'] = i.value
+            if i.name == 'Реквизиты':
+                context['pay'] = i.value
+            if i.name == 'Адрес':
+                context['address'] = i.value
+            if i.name == 'Почта':
+                context['email'] = i.value
+        return render(request, 'html/index.html', context=context)
     if request.method == 'POST':
 
         form = ContactForm(request.POST or None)
         if form.is_valid():
-
             OrderModel.objects.create(
                 name=form.cleaned_data['name'],
                 phone=form.cleaned_data['phone'],

@@ -554,7 +554,7 @@ border-top: 1px solid #a6a6a6;
 
 /* Стили для заголовков левой колонки */
 .topic {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 7px; /* отступ снизу 7px */
 }
@@ -563,7 +563,7 @@ border-top: 1px solid #a6a6a6;
 .text-one,
 .text-two {
   font-size: 14px;
-  color: #afafb6;
+  color: #000;
 }
 
 /* Заголовок правой колонки */
@@ -667,3 +667,5 @@ border-top: 1px solid #a6a6a6;
     margin-left: 0;
   }
 }
+docker container stop pet_shop && docker container rm pet_shop
+docker run --name pet_shop -v -itd -p 8082:8000 -d pet_shop_web
