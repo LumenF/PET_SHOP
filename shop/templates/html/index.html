@@ -1,0 +1,315 @@
+{% extends 'html/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Перевезення тварин</h1>
+<section id="s1"></section>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div id="carousel__photo"  class="carousel-item active">
+      <img id="carousel__img" src="{% static 'img/slide_1.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div id="carousel__photo"  class="carousel-item">
+      <img id="carousel__img" src="{% static 'img/slide_2.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div id="carousel__photo"  class="carousel-item">
+      <img id="carousel__img" src="{% static 'img/slide_3.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<script>
+  var myCarousel = document.querySelector('#carouselExampleCaptions')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 14000,
+  wrap: true,
+  keyboard: true,
+  touch: true,
+  index: 0,
+})
+</script>
+<section id="s2"></section>
+
+<div class="about">
+  <div class="about__wrapper">
+
+    <h2>Про нас</h2>
+  </div>
+  <div class="about__container">
+    <div class="about__container__item">
+      <h5>Наша діяльність</h5>
+      <p><br>
+      Ми надаємо послуги з транспортування домашніх тварин будь-яких порід та розмірів.<br>
+      Ми дбаємо про те, щоб ваш вихованець отримав усі необхідні документи
+      та щеплення відповідно до вимог країни призначення.<br>
+      Ми також надаємо послуги з оформлення документів та консультування з питань,
+      пов'язаних з перевезенням тварин.</p>
+
+    </div>
+    <div class="about__container__item">
+      <img src="{% static 'img/slide_1.jpg' %}" alt="...">
+    </div>
+    <div class="about__container__item">
+            <img src="{% static 'img/slide_2.png' %}" alt="...">
+
+    </div>
+    <div class="about__container__item">
+    <h5>Наша діяльність</h5>
+      <p><br>
+      Ми надаємо послуги з транспортування домашніх тварин будь-яких порід та розмірів.<br>
+      Ми дбаємо про те, щоб ваш вихованець отримав усі необхідні документи
+      та щеплення відповідно до вимог країни призначення.<br>
+      Ми також надаємо послуги з оформлення документів та консультування з питань,
+      пов'язаних з перевезенням тварин.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="process">
+  <div class="process__wrapper">
+    <h2>Наш процесс работы с животными</h2>
+
+    <div id="carouselProcess" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselProcess" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselProcess" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselProcess" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div id="carousel__photo"  class="carousel-item active">
+            <img id="carousel__img" src="{% static 'img/proces_1.png' %}" class="d-block w-100" alt="...">
+
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div id="carousel__photo"  class="carousel-item">
+          <img id="carousel__img" src="{% static 'img/process_2.png' %}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div id="carousel__photo"  class="carousel-item">
+          <img id="carousel__img" src="{% static 'img/process_3.png' %}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProcess" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselProcess" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+<script>
+var myCarousel = document.querySelector('#carouselProcess')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 1000,
+  wrap: true,
+  keyboard: true,
+  touch: true,
+})
+</script>
+<section id="s4"></section>
+<div class="faq">
+  <div class="faq__wrapper">
+    <div class="faq_title">
+      <h2>Вопросы и ответы</h2>
+    </div>
+    <div class="faq_dropdown">
+        <div class="accordion">
+      <input id="toggle1" type="radio" class="accordion-toggle" name="toggle" />
+      <label for="toggle1">Q: Яких тварин можливо перевозити?</label>
+      <section>
+        <p>Ми надаємо транспортування для більшості домашніх тварин, включаючи собак, кішок, гризунів, птахів та рептилій.</p>
+      </section>
+    </div>
+    <div class="accordion">
+      <input id="toggle2" type="radio" class="accordion-toggle" name="toggle" />
+      <label for="toggle2">Q: Максимальна вага тварини?</label>
+      <section>
+        <p>Ми надаємо транспортування тварин вагою до 50 кг. Для тварин більшої ваги, зв'яжіться з нами, щоб обговорити доступні варіанти.</p>
+      </section>
+    </div>
+    <div class="accordion">
+      <input id="toggle3" type="radio" class="accordion-toggle" name="toggle" />
+      <label for="toggle3">Q: Як можна відстежити поїздку тварини?</label>
+      <section>
+        <p>Ми надаємо нашим клієнтам детальну інформацію про маршрут і інформацію про місцезнаходження тварини в будь-який час. Ви також можете відстежувати поїздку</p>
+      </section>
+    </div>
+    <div class="accordion">
+      <input id="toggle4" type="radio" class="accordion-toggle" name="toggle" />
+      <label for="toggle4">Q: Які витрати транспортування тварин?</label>
+      <section>
+        <p>Ціна залежить від місця та типу транспортування. Для автомобільних перевезень можуть знадобитися додаткові витрати на проживання та харчування для здійснення дороги. Для авіаперевезень також можуть знадобитися додаткові витрати на багажні збори та перевезення великих тварин.</p>
+      </section>
+    </div>
+
+    <div class="accordion">
+    <input id="toggle5" type="radio" class="accordion-toggle" name="toggle" />
+    <label for="toggle5">Q: Безпека перевезення</label>
+    <section>
+      <p>Наша компанія має багаторічний досвід у транспортуванні тварин і ми надаємо безпечні та надійні послуги. Всі наші водії мають значний досвід у перевезенні тварин та наші фахівці проходять суворе навчання з безпеки.</p>
+    </section>
+  </div>
+      </div>
+    </div>
+</div>
+
+<section id="s3" >
+
+  <div class="rev">
+        <h2>Наші відгуки</h2>
+
+    <div class="row d-flex justify-content-center">
+    <div class="col-md-10 col-xl-8 text-center">
+      <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+    </div>
+  </div>
+
+  <div class="row text-center d-flex align-items-stretch">
+    <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+      <div class="card testimonial-card">
+        <div class="card-up" style="background-color: #;"></div>
+        <div class="avatar mx-auto bg-white">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+            class="rounded-circle img-fluid" />
+        </div>
+        <div class="card-body">
+          <h4 class="mb-4">Полина Куско</h4>
+          <hr />
+          <p class="dark-grey-text mt-4">
+            <i class="fas fa-quote-left pe-2"></i>Я не могла представить себе, что это произойдет так быстро. Решение о перевозке собаки из Харькова в Киев было принято за несколько дней до этого. Я нашла специальную службу доставки собак и с помощью них подготовила все необходимые документы для перевозки собаки. Во время путешествия я часто получала обновления от драйвера о местонахождении моей собаки. В конце концов, собака была доставлена безопасно и здоровой в Киев. Я была очень довольна и благодарна службе доставки за профессионализм и любезность.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+      <div class="card testimonial-card">
+        <div class="card-up" style="background-color: #;"></div>
+        <div class="avatar mx-auto bg-white">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+            class="rounded-circle img-fluid" />
+        </div>
+        <div class="card-body">
+          <h4 class="mb-4">Оксана Курсик</h4>
+          <hr />
+          <p class="dark-grey-text mt-4">
+            <i class="fas fa-quote-left pe-2"></i> Однажды я захотела подарить своей дочери щенка. Я нашла маленького пушистого харьковского щеночка, и моя дочь была в восторге. Проблема заключалась в том, что мы живем в Киеве, и нам нужно было доставить щеночка до нашей дома. Мы долго искали способ доставить его безопасно, и в итоге нашли перевозчика, который доставил щеночка до нашего дома. Я была в восторге от своей дочери и ее щеночка. Теперь эта маленькая малышка – пушистый ангора – полностью входит в нашу семью. Я не могу передать достаточно трогательных слов для описания процесса перевозки щеночка из Харькова в Киев. Это был настоящий праздник!
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-0 d-flex align-items-stretch">
+      <div class="card testimonial-card">
+        <div class="card-up" style="background-color: #;"></div>
+        <div class="avatar mx-auto bg-white">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+            class="rounded-circle img-fluid" />
+        </div>
+        <div class="card-body">
+          <h4 class="mb-4">Станіслав  Решетько</h4>
+          <hr />
+          <p class="dark-grey-text mt-4">
+            <i class="fas fa-quote-left pe-2"></i>Я знайшов  цуценя у Харкові, але зіткнувся з проблемою доставки до Києва. Я знайшов компанію, яка надає послуги з перевезення тварин, і вони доставили щеня наступного дня. Я був радий, що доставка пройшла гладко, і коли ми повернулися додому, я назвав цуценя Баксом і ми стали нерозлучними друзями.
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<section id="s5"></section>
+<div class="callback__form">
+  <h2>Замовити дзвінок</h2>
+  <div class="container">
+
+        <!-- content содержит содержимое формы -->
+        <div class="content">
+
+          <!-- Левая колонка: адрес, телефоны, email. Можете добавить свое -->
+          <div class="left-side">
+
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Телефон</div>
+              <div class="text-one">8-800-000-00-00</div>
+              <div class="text-two">8-900-000-00-00</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">support@site.com</div>
+              <div class="text-two">admin@site.com</div>
+            </div>
+          </div>
+
+          <!-- Правая колонка: сама форма -->
+          <div class="right-side">
+
+            <p>
+              Если у вас есть какие-то вопросы или предложения по сотрудничеству -
+              заполните форму ниже
+            </p>
+
+            <form action="/" method="post">
+              {% csrf_token %}
+              <div class="input-box">
+                {{ form.name }}
+
+              </div>
+              <div class="input-box">
+                {{ form.phone }}
+
+              </div>
+              <div class="input-box">
+                {{ form.address }}
+
+              </div>
+              <div class="button">
+                <input type="submit" value="Отправить" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+</div>
+{% endblock %}
