@@ -2,6 +2,8 @@
 {% load static %}
 
 {% block content %}
+
+
 <h1 id="main_title">Перевезення тварин</h1>
 <section id="s1"></section>
 
@@ -252,7 +254,14 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   </div>
 </section>
 
-
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
 
 <section id="s5"></section>
 <div class="callback__form">
@@ -303,8 +312,10 @@ var carousel = new bootstrap.Carousel(myCarousel, {
                 {{ form.address }}
 
               </div>
-              <div class="button">
-                <input type="submit" value="Відправити" />
+              <div class="button" >
+
+                <input type="submit" value="Відправити"/>
+
               </div>
             </form>
           </div>
