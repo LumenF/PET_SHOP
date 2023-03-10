@@ -407,6 +407,18 @@ body {
     .about__container__item p{
         font-size: 0.76em
     }
+    #title_div{
+        height: 60px;
+    }
+    #title_p{
+        font-size: 0.7em;
+    }
+    #title_h5{
+        font-size: 1em;
+    }
+    .accordion>label {
+        font-size: 0.8em;
+    }
 }
 
 /* Стили для экранов между 768 и 1024 пикселями */
@@ -483,17 +495,20 @@ body {
     }
 }
 @media screen and (max-width: 450px) {
-.about__container__item p{
-        font-size: 0.76em
+    .about__container__item p{
+            font-size: 0.76em
+        }
+    #main_title{
+        font-size: 1.7em
     }
-#main_title{
-    font-size: 1.7em
-}
-main{
-padding: 3px;
-    margin-left: 0%;
-    margin-right: 0%;
-}
+    main{
+    padding: 3px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .accordion>label {
+        font-size: 0.64em;
+    }
 }
 .review_wrapper{
 border-top: 1px solid #a6a6a6;
