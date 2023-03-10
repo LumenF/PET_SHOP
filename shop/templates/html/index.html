@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<h1>Перевезення тварин</h1>
+<h1 id="main_title">Перевезення тварин</h1>
 <section id="s1"></section>
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -74,7 +74,8 @@ var carousel = new bootstrap.Carousel(myCarousel, {
     <div class="about__container__item">
       <img src="{% static 'img/slide_1.jpg' %}" alt="...">
     </div>
-    <div class="about__container__item">
+
+    <div class="about__container__item" id="hid_post">
             <img src="{% static 'img/slide_2.png' %}" alt="...">
 
     </div>
@@ -83,6 +84,8 @@ var carousel = new bootstrap.Carousel(myCarousel, {
       <p><br>
       Я не могла уявити собі, що це станеться так швидко. Рішення про перевезення собаки з Харкова до Києва було ухвалено за кілька днів до цього. Я знайшла спеціальну службу доставки собак та за допомогою них підготувала всі необхідні документи для перевезення собаки. Під час подорожі я часто отримувала поновлення від драйвера про місцезнаходження мого собаки. Зрештою, собаку було доставлено безпечно та здорово до Києва. Я була дуже задоволена та вдячна службі доставки за професіоналізм та люб'язність.</div>
   </div>
+
+
 </div>
 
 

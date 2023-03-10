@@ -138,7 +138,9 @@ footer a:hover {
 #carousel__photo{
     max-height: 450px;
 }
-
+#hid_post{
+    display: block;
+}
 .d-block w-100{
  display: none;
 }
@@ -170,7 +172,7 @@ footer a:hover {
 .about__container__item{
     border: 1px solid #a6a6a6;
     border-radius: 40px;
-    width: 550px;
+    max-width: 550px;
     height: 300px;
     margin: 10px;
     gap: 10px;
@@ -186,6 +188,7 @@ footer a:hover {
 }
 
 .about__container__item p{
+font-size: 1em;
     margin: 20px;
 }
 
@@ -325,9 +328,11 @@ footer a:hover {
 
     }
   .about__container__item{
-        width: 430px;
-        height: 100%
+        width: 400px;
         max-height: 350;
+    }
+    .about__container__item p{
+        font-size: 0.86em
     }
 }
 
@@ -344,7 +349,9 @@ body {
     display: block;
     margin: 0;
   }
-
+    #hid_post{
+        display: none;
+    }
   header nav ul li {
     display: block;
     margin: 0;
@@ -373,7 +380,6 @@ body {
   }
 
   main {
-    padding: 10px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -393,6 +399,14 @@ body {
   .form_caption {
     width: 100%;
   }
+   .about__container__item{
+        width: 400px;
+        max-height: 350;
+        margin: 10px;
+    }
+    .about__container__item p{
+        font-size: 0.76em
+    }
 }
 
 /* Стили для экранов между 768 и 1024 пикселями */
@@ -418,8 +432,6 @@ body {
 
   main {
     padding: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 
   .about__wrapper h2 {
@@ -432,6 +444,7 @@ body {
   .form__form {
     margin-left: 30px;
   }
+
 }
 
 /* Стили для экранов больше 1024 пикселей */
@@ -456,12 +469,32 @@ body {
   }
 
   main {
-    padding: 34px;
-    margin-left: 10%;
-    margin-right: 10%;
   }
-}
 
+   .about__container__item{
+        max-width: 49%;
+        min-width: 300px;
+        max-height: 350;
+        margin: 0px;
+
+    }
+    .about__container__item p{
+        font-size: 0.86em
+    }
+}
+@media screen and (max-width: 450px) {
+.about__container__item p{
+        font-size: 0.76em
+    }
+#main_title{
+    font-size: 1.7em
+}
+main{
+padding: 3px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}
 .review_wrapper{
 border-top: 1px solid #a6a6a6;
     margin-top: 30px;
@@ -490,8 +523,7 @@ border-top: 1px solid #a6a6a6;
 /* В body устанавливаем шрифт, ширину и высоту, а также фон */
 
 /* Ограничиваем контейнер по ширине 1000px */
-.container {
-}
+
 
 .callback__form{
 border-top: 1px solid #a6a6a6;
@@ -667,5 +699,3 @@ border-top: 1px solid #a6a6a6;
     margin-left: 0;
   }
 }
-docker container stop pet_shop && docker container rm pet_shop
-docker run --name pet_shop -v -itd -p 8082:8000 -d pet_shop_web
