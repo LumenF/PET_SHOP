@@ -419,6 +419,9 @@ body {
     .accordion>label {
         font-size: 0.8em;
     }
+    #block_contact{
+        margin: 10px;
+    }
 }
 
 /* Стили для экранов между 768 и 1024 пикселями */
