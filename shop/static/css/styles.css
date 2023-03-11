@@ -345,6 +345,16 @@ body {
 
 /* Стили для экранов меньше 768 пикселей */
 @media screen and (max-width: 767px) {
+    main{
+          margin-left: 0%;
+          margin-right: 0%;
+    }
+    #header_id{
+       width: 100%;
+    }
+    .sticky{
+    width: 100%;
+    }
   header nav ul {
     display: block;
     margin: 0;
@@ -426,6 +436,7 @@ body {
 
 /* Стили для экранов между 768 и 1024 пикселями */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
   header nav ul {
     margin-left: 5%;
     margin-right: 5%;
@@ -519,7 +530,6 @@ body {
         font-size: 1.7em
     }
     main{
-    padding: 3px;
         margin-left: 0%;
         margin-right: 0%;
     }
