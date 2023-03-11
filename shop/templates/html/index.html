@@ -17,7 +17,7 @@
     <div id="carousel__photo"  class="carousel-item active">
       <img id="carousel__img" src="{% static 'img/slide_1.jpg' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-md-block" id="title_div">
-        <h5 id="title_h5">Работаем с 2019 года</h5>
+        <h5 id="title_h5">Працюємо з 2019 року.</h5>
         <p id="title_p">Безпечне перевезення вихованця в будь-яке місто.</p>
       </div>
     </div>
@@ -95,56 +95,41 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   <div class="process__wrapper">
     <h2>Наш процес роботи з тваринами</h2>
 
-    <div id="carouselProcess" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselProcess" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselProcess" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselProcess" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div id="carousel__photo"  class="carousel-item active">
-            <img id="carousel__img" src="{% static 'img/proces_1.png' %}" class="d-block w-100" alt="...">
-
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div id="carousel__photo"  class="carousel-item">
-          <img id="carousel__img" src="{% static 'img/process_2.png' %}" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div id="carousel__photo"  class="carousel-item">
-          <img id="carousel__img" src="{% static 'img/process_3.png' %}" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProcess" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselProcess" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <div class="process__container" data-bs-ride="carousel">
+        <div class="steps-container">
+  <div class="step">
+    <h2>Шаг 1</h2>
+    <h6> Подготовка к перевозке</h6>
+    <p>Перед тим як відправити тварину в подорож,<br>
+      ми проводимо необхідні медичні обстеження та піклуємося про те,
+      щоб вони отримали всі необхідні щеплення
+      та пройшли відповідну процедуру санітарної обробки.<br>
+      Також ми переконуємось,
+      що тварина досить комфортно почувається і підготовлена ​​до перевезення.</p>
+  </div>
+  <div class="step">
+    <h2>Шаг 2</h2>
+    <h6>Выбор подходящего транспорта</h6>
+    <p>Коли ми підготували тварину до перевезення,
+      ми вибираємо підходящий транспорт для доставки.
+      Ми враховуємо такі фактори, як відстань перевезення,
+      розмір та тип тварини,
+      а також його особливості та потреби.
+      Ми використовуємо транспорт,
+      який забезпечує безпеку та комфорт тварини в дорозі.</p>
+  </div>
+  <div class="step">
+    <h2>Шаг 3</h2>
+    <h6>Доставка к месту назначения</h6>
+    <p>Коли тварина готова до відправлення та вибраний підходящий транспорт, ми відправляємо її на місце призначення.
+Ми стежимо за всім процесом перевезення, щоб переконатися, що тварина знаходиться у безпеці та отримує все необхідне в дорозі.
+Коли тварина прибуває до вас, ми забезпечуємо їй теплий прийом та підтримуємо вас у курсі процесу доставки.</p>
+  </div>
+</div>
     </div>
   </div>
 </div>
-<script>
-var myCarousel = document.querySelector('#carouselProcess')
-var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 2000,
-  wrap: true,
-  keyboard: true,
-  touch: true,
-})
-</script>
+
 <section id="s4"></section>
 <div class="faq">
   <div class="faq__wrapper">
