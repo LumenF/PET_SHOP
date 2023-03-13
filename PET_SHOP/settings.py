@@ -110,12 +110,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://',
-    'https://www.',
+    'https://zootravel.site',
+    'https://www.zootravel.site',
 ]
 CORS_ALLOWED_ORIGINS = [
-    'https://',
-    'https://www',
+    'https://zootravel.site',
+    'https://www.zootravel.site',
 
 ]
 CORS_ALLOW_ALL_ORIGINS = True
