@@ -27,7 +27,7 @@ def home(request):
                 context['email'] = i.value
         return render(request, 'html/index.html', context=context)
     if request.method == 'POST':
-
+        print(1)
         form = ContactForm(request.POST or None)
         if form.is_valid():
             OrderModel.objects.create(
@@ -35,7 +35,10 @@ def home(request):
                 phone=form.cleaned_data['phone'],
                 address=form.cleaned_data['address']
             )
-        return HttpResponseRedirect('/#s4')
+            print(2)
+        print(3)
+
+        return HttpResponseRedirect('/#s5')
 
 
 def about(request):
@@ -50,5 +53,6 @@ def callback(request: HttpRequest):
     body_unicode = request.body.decode('utf-8')
     body = json.loads(body_unicode)
     content = body['content']
+    print(content)
     print(content)
     return render(request, 'html/index.html')
